@@ -19,6 +19,7 @@ public class Facade {
     }
 
     public void test(){
+
         absFactory.createModuleA().a1();
         absFactory.createModuleB().modulemmm();
         absFactory.createModuleC().mc();
