@@ -32,7 +32,7 @@ public class TestMain {
         filterChain.addFilter(new HtmlFilter());
         filterChain.addFilter(new ScriptFilter());
 
-        Response response = new Response();
+        Response response = new Response("返回数据");
         filterChain.doFilter(request,response,filterChain);
 
         System.out.println(response.getRepStr());

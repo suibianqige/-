@@ -31,9 +31,14 @@ public class FilterChain implements Filter {
 
     @Override
     public void doFilter(Request request, Response response, FilterChain filterChain) {
-        if(filters == null || filters.size() == 0 || filters.size() == i){return;}
+        /*if(filters == null || filters.size() == 0 || filters.size() == i){return;}
         Filter filter = filters.get(i);
         i++;
-        filter.doFilter(request,response,filterChain);
+        filter.doFilter(request,response,filterChain);*/
+        while (filters.iterator().hasNext()){
+            Filter filter = filters.iterator().next();
+            filters.remove(filter);
+            filter.doFilter(request,response,this);
+        }
     }
 }

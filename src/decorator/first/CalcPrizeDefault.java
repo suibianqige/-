@@ -11,6 +11,7 @@ public class CalcPrizeDefault extends CalcPrize {
 
     @Override
     protected double calPrize(String user) {
+        System.out.println("默认无提成");
         return 0;
     }
 }

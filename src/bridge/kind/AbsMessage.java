@@ -14,7 +14,7 @@ import bridge.method.MobileMessage;
  */
 public abstract class AbsMessage {
 
-    private MessageImplor messageImpl = new MobileMessage();
+    private MessageImplor messageImpl;
 
     /*public AbsMessage() {
 

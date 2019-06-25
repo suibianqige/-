@@ -31,6 +31,8 @@ public class TestMain {
         composit2.addNode(leaf4);
         composit2.addNode(leaf5);
 
+        leaf1.addNode(new Composit("叶子节点增加中间节点"));
+
         root.printName(0);
     }
 }

@@ -9,6 +9,10 @@ public class Response {
 
     private String repStr;
 
+    public Response(String repStr) {
+        this.repStr = repStr;
+    }
+
     public String getRepStr() {
         return repStr;
     }

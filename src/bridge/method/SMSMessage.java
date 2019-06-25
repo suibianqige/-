@@ -5,7 +5,7 @@ package bridge.method;
  * @Description:
  * @Date: 2019/1/2 10:23
  *
- * 站内消息
+ * 短信消息
  */
 public class SMSMessage implements MessageImplor {
     @Override
